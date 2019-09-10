@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse" style="background-color: rgb(0, 0, 0);
+border-color: #E7E7E7">
+<a class="navbar-brand text-white">JWT Auth System</a>
+<button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">LogOut</button>
+</nav>
+
+<div class="card-m-5" style="width:18rem" *ngIf="userDetails">
+<ul class="list-group">
+<li class="list-group-item"><strong>UserName:</strong>{{userDetails.userName}}</li>
+<li class="list-group-item"><strong>FullName:</strong>{{userDetails.fullName}}</li>
+<li class="list-group-item"><strong>Email:</strong>{{userDetails.email}}</li>
+</ul>
+</div>
